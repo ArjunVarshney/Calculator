@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="shortcut icon"
+      href="https://1.bp.blogspot.com/-4NH_X9UGtWI/YJh9RPIzRDI/AAAAAAAAOto/urkftk72C3M6fVzuBOP2TU3bcXnbkyjCgCLcBGAsYHQ/s320/logo.png"
+      type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/5ac961fbd5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div class="loader_bg">
+      <img
+         src="https://1.bp.blogspot.com/-4NH_X9UGtWI/YJh9RPIzRDI/AAAAAAAAOto/urkftk72C3M6fVzuBOP2TU3bcXnbkyjCgCLcBGAsYHQ/s320/logo.png">
+      <p>Calculator</p>
+   </div>
+
+   <nav>
+      <div>
+         <div id="logo">EXE<span>P</span></div>
+         <div class="menu_icon" onclick="showmenu()">
+            <div></div>
+         </div>
+         <div class="menu">
+            <div>
+               <div id="darkmode">
+                  <div class="menuicon">
+                     <i class="fas fa-sun" id="dark"></i>
+                     <h4>Light mode</h4>
+                  </div>
+                  <div class="menuicon">
+                     <i class="fas fa-moon" id="light"></i>
+                     <h4>Dark mode</h4>
+                  </div>
+               </div>
+               <a href="https://magicnotesbyarjun.blogspot.com/" class="menuicon">
+                  <i class="fas fa-sticky-note"></i>
+                  <h4>Notes</h4>
+               </a>
+               <a href="https://calculatorbyarjun.blogspot.com/" class="menuicon">
+                  <i class="fas fa-calculator" id="calc"></i>
+                  <h4>Calculator</h4>
+               </a>
+               <a href="https://clockbyarjun.blogspot.com/" class="menuicon">
+                  <i class="fas fa-clock"></i>
+                  <h4>Clock</h4>
+               </a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <section id="outercalc">
+      <div>
+         <div>
+            <input type="text" id="inpval" disabled>
+            <div id="output"></div>
+         </div>
+         <div class="calculator">
+            <div class="calc">
+               <span id="7" onclick="solve(this.id)">7</span>
+               <span id="8" onclick="solve(this.id)">8</span>
+               <span id="9" onclick="solve(this.id)">9</span>
+               <span id="4" onclick="solve(this.id)">4</span>
+               <span id="5" onclick="solve(this.id)">5</span>
+               <span id="6" onclick="solve(this.id)">6</span>
+               <span id="1" onclick="solve(this.id)">1</span>
+               <span id="2" onclick="solve(this.id)">2</span>
+               <span id="3" onclick="solve(this.id)">3</span>
+               <span id="0" onclick="solve(this.id)">0</span>
+               <span id="." onclick="solve(this.id)">.</span>
+               <span id="equals" onclick="solve(this.id)">=</span>
+            </div>
+            <div class="operations">
+               <span id="backspace" onclick="solve(this.id)"><i class="fas fa-backspace"></i></span>
+               <span id="/" onclick="solve(this.id)">/</span>
+               <span id="*" onclick="solve(this.id)">x</span>
+               <span id="-" onclick="solve(this.id)">-</span>
+               <span id="+" onclick="solve(this.id)">+</span>
+            </div>
+            <div class="sidepanelicon" onclick="expsidepanel()">
+               <div>
+                  &#8249;
+               </div>
+            </div>
+            <div class="sidepanel">
+               <span class="sideoperations" onclick="solve(this.id)" id="log(">log</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="sin(">sin</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="cos(">cos</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="tan(">tan</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="ln(">ln</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="√">√</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="π">π</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="e">e</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="(">(</span>
+               <span class="sideoperations" onclick="solve(this.id)" id=")">)</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="{">{</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="}">}</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="[">[</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="]">]</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="%">%</span>
+               <span class="sideoperations" onclick="solve(this.id)" id="^">^</span>
+               <span class="sideoperations" onclick="solve(this.id)"></span>
+               <span class="sideoperations" onclick="solve(this.id)"></span>
+               <!-- <span id="19">1</span> -->
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+<script src="main.js"></script>
+
+</html>
